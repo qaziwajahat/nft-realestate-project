@@ -1,0 +1,92 @@
+.cardCustom {
+  background-color: black;
+}
+.bg {
+  /* padding-top: 100rem; */
+  background: linear-gradient(rgba(0, 0, 0, 0.952), rgba(0, 0, 0, 0.5)),
+    url(../../assets/i14.jpg);
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+.dataTeam {
+  padding-bottom: 3rem;
+  display: flex;
+  width: 100%;
+  padding-top: 5rem;
+  background-color: black;
+}
+.dataTeam2 {
+  padding-bottom: 8rem;
+  display: flex;
+  width: 100%;
+  padding-top: 5rem;
+  background-color: black;
+}
+.dataFooter {
+  /* padding-bottom: 10rem; */
+  display: flex;
+  width: 100%;
+  padding-top: 5rem;
+  background-color: black;
+}
+.span-color {
+  color: #fce38a;
+}
+.img-cus-card{
+  height: 30rem;
+  
+}
+.btn-Custom {
+  text-align: end;
+  padding: 0.8rem;
+  margin: 0.8rem;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  fill: #000000;
+  color: #000000;
+  background-color: #fce38a;
+  border-radius: 1rem 1rem 1rem 1rem;
+  /* display: flex; */
+  /* box-sizing: bord er-box; */
+  /* clear: both; */
+  /* align-content: flex-end; */
+  /* height: fit-content; */
+}
+.TeamPara {
+  /* padding-top: 200px; */
+  /* text-align: center; */
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 100%;
+  margin: 2rem;
+  opacity: 0.3s;
+}
+.cardHeading {
+  text-align: left;
+  padding: 1rem;
+  /* box-sizing: border-box; */
+  /* clear: both; */
+  text-align: left;
+  display: flex;
+  color: #ffffff;
+  align-content: flex-start;
+  height: fit-content;
+}
+.imageTeam {
+  width: 15.5rem;
+  height: 20.5rem;
+  border-radius: 20px 20px 20px 20px;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}

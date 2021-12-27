@@ -1,0 +1,61 @@
+.homeHeading2 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #ffffff;
+}
+.dataaa {
+  display: flex;
+  width: 100%;
+  padding-top: 5rem;
+  background-color: black;
+}
+.span-color {
+  color: #fce38a;
+}
+.main {
+  background-color: black;
+  width: 100%;
+}
+.imageSlide {
+  height: 22.2rem;
+  width: 22.2rem;
+}
+.cardCus {
+  background-color: black;
+  display: flex;
+}
+.cardHeading {
+  line-height: 1.85714285714286;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+  clear: both;
+  text-align: left;
+  display: flex;
+  color: #ffffff;
+  align-content: flex-start;
+}
+.btn-Cus {
+  margin: 10px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  fill: #000000;
+  color: #000000;
+  background-color: #fce38a;
+  border-radius: 10px 10px 10px 10px;
+  width: auto;
+  align-content: flex-start;
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}

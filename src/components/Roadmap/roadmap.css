@@ -1,0 +1,57 @@
+.homeHeading2 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #ffffff;
+}
+.dataa {
+  display: flex;
+  width: 100%;
+  padding-top: 20rem;
+
+  background-color: black;
+}
+.iimage {
+  width: 35.5rem;
+  height: 35.5rem;
+  border-radius: 20px 20px 20px 20px;
+}
+.main {
+  background-color: black;
+  width: 100%;
+}
+.inlineLeft {
+  background-color: black;
+  font-family: "Montserrat", Sans-serif;
+  text-shadow: 0px 0px 19px rgba(0, 0, 0, 0.3);
+  color: #ff0000;
+  font-weight: bolder;
+  box-shadow: none;
+  display: inline;
+  /* padding: 0.5rem; */
+}
+.Line {
+  color: #ff0000;
+  height: 10rem;
+}
+.inlineRight {
+  background-color: black;
+  font-family: "Montserrat", Sans-serif;
+  text-shadow: 0px 0px 19px rgba(0, 0, 0, 0.3);
+  color: #ff0000;
+  font-weight: bolder;
+  box-shadow: none;
+  display: inline;
+  float: inline-end;
+  /* padding: 0.5rem; */
+}
+.accContent {
+  padding: 1rem;
+  color: white;
+  /* font-family: ; */
+  font-weight: 700;
+  font-style: italic;
+  font-size: 100%;
+  text-align: left;
+}
