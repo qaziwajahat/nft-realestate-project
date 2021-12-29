@@ -211,14 +211,7 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
                   >
                     Mint Now
                   </button>
-                  <button href="#Buynft"
-                    className="btn connect-btn  mint-btn"
-                    onClick={async () => {                      
-                      await connectWallet();
-                    }}
-                  >
-                   {connectedAccount}
-                  </button>
+                 
                   <br />
                   <span className="spanNFT">{supply} / 10000</span>
                 </p>
