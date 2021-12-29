@@ -1,87 +1,94 @@
 import { React, useState, useEffect } from "react";
-// import Web3 from "web3";
-// import abi from "../abi.json";
+import Web3 from "web3";
+import abi from "./abi.json";
 import i2 from "../../assets/i2.jpg";
 import "./buy.css";
+
+require("dotenv").config();
+const { REACT_APP_CONTRACT_ADDRESS } = process.env;
 const Buy = ({ connecctstatus, setConnectedstatus }) => {
-  // const [connectedAccount, setConnectedAccount] = useState("Connect Wallet");
-  // const [contract, setContract] = useState(null);
-  // const [tokenId, setTokenId] = useState(null);
-  // const [supply, setTokenSupply] = useState(0);
-  // const [price, setPrice] = useState();
-  // const [priceInEth, setPriceInEth] = useState(0.06);
+  const [connectedAccount, setConnectedAccount] = useState("CONNECT");
+  const [contract, setContract] = useState(null);
+  const [tokenId, setTokenId] = useState(null);
+  const [supply, setTokenSupply] = useState(null);
+  const [price, setPrice] = useState();
+  const [priceInEth, setPriceInEth] = useState(0.05);
   const [quantity, setQuantity] = useState(1);
-  // const [minted, setMinted] = useState(false);
+  const [minted, setMinted] = useState(false);
+  console.log("C", connecctstatus);
 
   useEffect(() => {
-    // loadWeb3();
+    loadWeb3();
   }, []);
 
-  // async function loadWeb3() {
-  //   if (window.ethereum) {
-  //     window.web3 = new Web3(window.ethereum);
-  //     // await window.ethereum.enable();
-  //     const web3 = window.web3;
-  //     // creating contract instance
-  //     const contractaddress = "0x3A368d7B329a079Dbc7e9BAD0a5c43E47823034a";
-  //     const ct = new web3.eth.Contract(abi, contractaddress);
-  //     setContract(ct);
-  //     console.log("ct", ct);
-  //     let price = await ct.methods.firstPrice().call();
-  //     setContract(ct);
-  //     setPrice(price);
-  //     setPriceInEth(web3.utils.fromWei(price, "ether"));
-  //     const totalSupply = await ct.methods.totalSupply().call();
-  //     setTokenSupply(totalSupply);
-  //   } else if (window.web3) {
-  //     window.web3 = new Web3(window.web3.currentProvider);
-  //   } else {
-  //     window.alert(
-  //       "Non-Ethereum browser detected. You should consider trying MetaMask!"
-  //     );
-  //   }
-  // }
-  // async function mint() {
-  //   const web3 = window.web3;
-  //   const _value = parseInt(price) * parseInt(quantity);
-  //   const address = await web3.eth.getAccounts();
+  async function loadWeb3() {
+    if (window.ethereum) {
+      window.web3 = new Web3(window.ethereum);
+      // await window.ethereum.enable();
+      const web3 = window.web3;
+      // creating contract instance
+      const contractaddress = REACT_APP_CONTRACT_ADDRESS;
+      const ct = new web3.eth.Contract(abi, contractaddress);
+      setContract(ct);
+      console.log("ct", ct);
+      try {
+      let price= await ct.methods.getPrice(1).call();
+        
+      } catch (error) {
+        console.log(error);
+      }
+      let price = await ct.methods.price().call();
+      setContract(ct);
+      setPrice(price);
+      setPriceInEth(web3.utils.fromWei(price, "ether"));
+      const totalSupply = await ct.methods.totalSupply().call();
+      setTokenSupply(totalSupply);
+    } else if (window.web3) {
+      window.web3 = new Web3(window.web3.currentProvider);
+    } else {
+      window.alert(
+        "Non-Ethereum browser detected. You should consider trying MetaMask!"
+      );
+    }
+  }
+  async function mint() {
+    const web3 = window.web3;
+    const _value = price * quantity;
+    const address = await web3.eth.getAccounts();
 
-  //   await contract.methods
-  //     .publicMint(quantity)
-  //     .send({ from: address.toString(), value: _value })
-  //     .then((resp) => {
-  //       console.log("RESP", resp);
-  //     });
-  //   setMinted(true);
-  //   const totalSupply = await contract.methods.totalSupply().call();
-  //   if (totalSupply) setTokenSupply(totalSupply);
-  // }
-  // async function connectWallet() {
-  //   if (window.ethereum) {
-  //     window.web3 = new Web3(window.ethereum);
-  //     await window.ethereum.enable();
-  //     const web3 = window.web3;
-  //     const metaMaskAccount = await web3.eth.getAccounts();
-  //     setConnectedstatus(true);
-  //     let splitedMetaMaskAddress;
-  //     if (metaMaskAccount) {
-  //       splitedMetaMaskAddress =
-  //         metaMaskAccount[0].substring(0, 6) +
-  //         "......" +
-  //         metaMaskAccount[0].substring(
-  //           metaMaskAccount[0].length - 4,
-  //           metaMaskAccount[0].length
-  //         );
-  //     }
-  //     setConnectedAccount(splitedMetaMaskAddress);
-  //   } else if (window.web3) {
-  //     window.web3 = new Web3(window.web3.currentProvider);
-  //   } else {
-  //     window.alert(
-  //       "Non-Ethereum browser detected. You should consider trying MetaMask!"
-  //     );
-  //   }
-  // }
+    await contract.methods
+      .mint(quantity)
+      .send({ from: address.toString(), value: _value });
+    setMinted(true);
+    const totalSupply = await contract.methods.totalSupply().call();
+    setTokenSupply(totalSupply);
+  }
+  async function connectWallet() {
+    if (window.ethereum) {
+      window.web3 = new Web3(window.ethereum);
+      await window.ethereum.enable();
+      const web3 = window.web3;
+      const metaMaskAccount = await web3.eth.getAccounts();
+      setConnectedstatus(true);
+      let splitedMetaMaskAddress;
+      if (metaMaskAccount) {
+        splitedMetaMaskAddress =
+          metaMaskAccount[0].substring(0, 6) +
+          "......" +
+          metaMaskAccount[0].substring(
+            metaMaskAccount[0].length - 4,
+            metaMaskAccount[0].length
+          );
+      }
+      setConnectedAccount(splitedMetaMaskAddress);
+    } else if (window.web3) {
+      window.web3 = new Web3(window.web3.currentProvider);
+    } else {
+      window.alert(
+        "Non-Ethereum browser detected. You should consider trying MetaMask!"
+      );
+    }
+  }
   return (
     <>
       <div id="Buynft" className="data">
@@ -196,17 +203,24 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
                 />
 
                 <p className="text-center py-5">
-                  <a href="#Buynft"
+                  <button href="#Buynft"
                     className="btn connect-btn  mint-btn"
-                    // onClick={async () => {
-                    //   await connectWallet();
-                    //   mint();
-                    // }}
+                    onClick={async () => {
+                      await mint();
+                    }}
                   >
                     Mint Now
-                  </a>
+                  </button>
+                  <button href="#Buynft"
+                    className="btn connect-btn  mint-btn"
+                    onClick={async () => {                      
+                      await connectWallet();
+                    }}
+                  >
+                   {connectedAccount}
+                  </button>
                   <br />
-                  <span className="spanNFT">90 / 10000</span>
+                  <span className="spanNFT">{supply} / 10000</span>
                 </p>
               </div>
             </div>
