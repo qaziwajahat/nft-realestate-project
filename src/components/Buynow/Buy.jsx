@@ -118,7 +118,7 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
                     <h3 className="mint-mid">-</h3>
                   </div>
                   <div className="col-md-4 mx-auto">
-                    <h4 style={{ color: "white" }} className="float-right">0.01ETH</h4>
+                    <h4 style={{ color: "white" }} className="float-right">0.1ETH</h4>
                   </div>
                 </div>
                 <hr
@@ -189,7 +189,7 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
                     <h3 className="mint-mid">-</h3>
                   </div>
                   <div className="col-md-4 mx-auto">
-                    <h4 style={{ color: "white" }} className="float-right">10000</h4>
+                    <h4 style={{ color: "white" }} className="float-right">2500</h4>
                   </div>
                 </div>
                 <hr
@@ -214,7 +214,7 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
                   </button>
                  
                   <br />
-                  <span className="spanNFT">{supply} / 10000</span>
+                  <span className="spanNFT">{supply} / 2500</span>
                 </p>
               </div>
             </div>

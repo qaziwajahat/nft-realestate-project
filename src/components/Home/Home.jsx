@@ -43,13 +43,13 @@ const Home = () => {
             <div className="col-md-6 mx-auto ">
               <div className="d-flex">
                 <h1 className="homeHeading2">
-                  <span className="span-color">10000</span> UNIQUE REAL ESTATE
+                  <span className="span-color">2500</span> UNIQUE REAL ESTATE
                   NFTs
                 </h1>
               </div>
               <p className="para">
                 <strong>
-                  NftsRealEstate represents a collection of 10,000 unique Real
+                  NftsRealEstate represents a collection of 2500 unique Real
                   Estate assets categorized by level of rarity and ready to
                   control the Realestate on the MetaVerse.
                 </strong>
