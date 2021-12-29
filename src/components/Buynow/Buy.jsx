@@ -99,7 +99,7 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
             </div>
             <div className="col-md-6  ">
               <div className="col-md-12 btngroup ">
-                <h1 className="mint-heading">10000 UNIQUE REAL ESTATE NFTs</h1>
+                <h1 className="mint-heading">2500 UNIQUE REAL ESTATE NFTs</h1>
 
                 <hr
                   style={{
