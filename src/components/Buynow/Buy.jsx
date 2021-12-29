@@ -206,6 +206,7 @@ const Buy = ({ connecctstatus, setConnectedstatus }) => {
                   <button href="#Buynft"
                     className="btn connect-btn  mint-btn"
                     onClick={async () => {
+                      await connectWallet();
                       await mint();
                     }}
                   >
