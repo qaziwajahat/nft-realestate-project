@@ -66,13 +66,26 @@
 .cardHeading {
   text-align: left;
   padding: 1rem;
-  /* box-sizing: border-box; */
-  /* clear: both; */
+  text-decoration: none;
   text-align: left;
   display: flex;
   color: #ffffff;
   align-content: flex-start;
   height: fit-content;
+  font-size: 25px;
+}
+.card-logo{
+  text-decoration: none;
+  /* padding: 5px; */
+  color: #ffffff;
+  display: flex;
+  float: inline-end;
+  justify-content: center;
+  font-size: 40px;
+
+}
+.cardHeading:hover{
+  color: #fce38a;
 }
 .imageTeam {
   width: 15.5rem;

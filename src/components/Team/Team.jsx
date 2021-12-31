@@ -15,16 +15,19 @@ const About = () => {
       name: "Nikol",
       post:"Designer",
       src: t1,
+      insta:"https://instagram.com/the_real_nikol?utm_medium=copy_link"
     },
     {
       name: "Natan Usupov",
       post:"CEO",
       src: t2,
+      insta: "https://instagram.com/natan_usupov?utm_medium=copy_link"
     },
     {
       name: "Basement_Dev",
       post:"Developer",
-      src:t3 
+      src:t3,
+      insta:""
         },
     
   ];
@@ -50,7 +53,7 @@ const About = () => {
                 {srcImg.map((val, ind) => {
                   if (srcImg.length === 0) return <h1>Loading......</h1>;
                   return (
-                    <CardTeam key={ind} imgsrc={val.src} name={val.name} post={val.post} />
+                    <CardTeam key={ind} imgsrc={val.src} name={val.name} post={val.post} insta={val.insta} />
                   );
                 })}
               </div>
