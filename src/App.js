@@ -1,28 +1,19 @@
-// import "./App.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import Navbar from "./components/Navbar/Navbar";
-import About from "./components/About/About";
 import Home from "./components/Home/Home";
-import Roadmap from "./components/Roadmap/Roadmap";
-import Team from "./components/Team/Team";
-import { useState} from "react";
-import Buy from "./components/Buynow/Buy.jsx";
 
+import { useState } from "react";
+import Join from "./components/JoinCommunity/Join";
+import Mint from "./components/Mint/Mint";
+import Navbar from "./components/Navbar/Navbar";
+// import Roadmap from "./components/Roadmap/Roadmap";
 function App() {
-  const [connecctstatus, setConnectedstatus] = useState(false);
-
+  const [connectedAccount, setConnectedAccount] = useState("CONNECT");
   return (
     <>
-      <Navbar />
-      <Home />
-      <Buy
-        connecctstatus={connecctstatus}
-        setConnectedstatus={setConnectedstatus}
-      />
-      <About />
-      <Roadmap />
-      <Team />
+      <Navbar connectedAccount={connectedAccount} setConnectedAccount={setConnectedAccount} />
+      <Home/>
+      <Mint connectedAccount={connectedAccount} setConnectedAccount={setConnectedAccount}/>
+      {/* <Roadmap/> */}
+      <Join/>
     </>
   );
 }

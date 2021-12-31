@@ -1,0 +1,57 @@
+.bg-join{
+    background-image: url(../../assests/joincommunity.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height: 680px;
+}
+.join-heading{
+    color:white;
+    font-weight: bolder;
+    display: flex;
+}
+.join-para{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.connected{
+    background-image: url(../../assests/connect.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+}
+
+
+.nav-social{
+    text-align: center;
+  padding-left: 8px;
+  padding-bottom:4px ;
+  color: white!important;
+  width: 100px;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.nav-social:hover {
+  cursor: pointer;
+}
+.TeamPara {
+    /* padding-top: 200px; */
+    /* text-align: center; */
+    color: white;
+    font-family: "Poppins", Sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    margin: 2rem;
+    opacity: 0.3s;
+  }
+  .margin-set{
+      margin-top: 100px;
+      /* margin-: 100px; */
+      margin-left: 100px;
+      margin-right: 100px;
+
+  }

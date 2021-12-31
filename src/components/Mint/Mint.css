@@ -1,0 +1,84 @@
+.bg-mint{
+    background-image: url(../../assests/cloud.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height: 650px;
+    width: 100%;
+}
+.gif-col{
+    padding: 100px;
+}
+.gif{
+    float: right;
+    justify-content: end;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.mint-btn {
+    margin: auto;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    fill: #000000;
+    color: #000000;
+    background-color: #fce38a;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+  .spanNFT {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .nav-btn-nav {
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    color: #1a1a1a;
+    border-color: #c4c4c4;
+    background-color: #fce38a;
+    border-radius: 1.2rem;
+    padding-top: 0.8rem;
+    padding-right: 1.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.6rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    margin-right: 1rem;
+  }
+  .nav-btn-nav:hover {
+    background-color: black;
+    color: white !important;
+  }
+  .float-right {
+    display: flex;
+    float: right;
+  }
+  .mint-heading {
+    margin: 0rem;
+    font-size: 2.2rem;
+    padding: 0rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .float-div {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .mint-mid {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .btn-size {
+    font-size: 1.5rem;
+  }
+  

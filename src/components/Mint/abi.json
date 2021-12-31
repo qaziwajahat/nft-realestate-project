@@ -106,6 +106,19 @@
 	},
 	{
 		"inputs": [],
+		"name": "_TOTALSUPPLY",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "_baseURI",
 		"outputs": [
 			{
@@ -250,19 +263,6 @@
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "maxSupply",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -322,7 +322,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "phase",
+		"name": "price",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -335,7 +335,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "price",
+		"name": "reserve",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -344,6 +344,19 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "quantity",
+				"type": "uint256"
+			}
+		],
+		"name": "reserveTokens",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -436,19 +449,6 @@
 				"type": "uint256"
 			}
 		],
-		"name": "setMaxSupply",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_quantity",
-				"type": "uint256"
-			}
-		],
 		"name": "setMaxxQtPerTx",
 		"outputs": [],
 		"stateMutability": "nonpayable",
@@ -463,6 +463,19 @@
 			}
 		],
 		"name": "setPrice",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_quantity",
+				"type": "uint256"
+			}
+		],
+		"name": "setReserveTokens",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"

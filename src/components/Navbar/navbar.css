@@ -1,51 +1,66 @@
 .navBar {
-  background-color: black;
-  /* position: fixed; */
-  z-index: 1;
+  background-color:transparent;
+  position: absolute;
+  z-index: 0;
+}
+.logo{
+  color: black !important;
+  font-weight: bolder;
+}
+.bg-link{
+  align-items: center;
+  background-image: url(../../assests/link_back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+
+}
+.connect{
+  background-image: url(../../assests/connect.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 40px;
+}
+.bg-social{
+  margin-right: 20px;
+  height: 35px;
+  width: 35px;
 }
 .navLink {
-  margin-top: 0.6rem;
-  padding-top: 0.4rem;
-  padding-right: 1.4rem;
-  padding-bottom: 0.6rem;
-  padding-left: 1.4rem;
-  color: white !important;
+  padding: 5px;
+  color: #7d4b2a !important;
+  width: 100px;
   margin-right: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
 }
 .navLink:hover {
   cursor: pointer;
 }
 .nav-btn-nav {
-  border-style: solid;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-bottom-width: 1px;
-  color: #1a1a1a;
-  border-color: #c4c4c4;
-  background-color: #fce38a;
+  background-color: transparent;
+  color: #7d4b2a;
+  border: 0px;
+  text-decoration: none;
   border-radius: 3.2rem;
-  padding-top: 0.6rem;
-  padding-right: 1.6rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1.6rem;
   font-family: inherit;
   font-weight: bold;
-  font-size: 0.875rem;
-  line-height: 1;
+  font-size: 1rem;
+  /* line-height: 1; */
   text-transform: capitalize;
   letter-spacing: 0px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 .nav-btn-nav:hover {
-  background-color: black;
-  color: white !important;
+  /* background-color: black;
+  color: white !important; */
 }
 
 .menu_Active {
   color: #3498db !important;
   border-bottom: 0.1rem solid #565387;
 }
-/*# sourceMappingURL=Navbar.css.map */
+
