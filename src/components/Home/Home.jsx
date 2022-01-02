@@ -10,9 +10,9 @@ const Home = () => {
         <div className="container ">
           <div className="row">
             <div className=" col-md-12 mx-auto ">
-              <p className="homePara">WELCOME TO NFT REAL ESTATE</p>
+              <p className="homePara">WELCOME TO NFT'S META HOUSE</p>
 
-              <h1 className="homeHeading">NftsRealEstate</h1>
+              <h1 className="homeHeading">METAHOUSE</h1>
 
               <div className="row">
                 <div className="col-md-3   "></div>
@@ -43,13 +43,13 @@ const Home = () => {
             <div className="col-md-6 mx-auto ">
               <div className="d-flex">
                 <h1 className="homeHeading2">
-                  <span className="span-color">2500</span> UNIQUE REAL ESTATE
+                  <span className="span-color">2500</span> UNIQUE META HOUSE
                   NFTs
                 </h1>
               </div>
               <p className="para">
                 <strong>
-                  NftsRealEstate represents a collection of 2500 unique Real
+                  MetaHouse represents a collection of 2500 unique Real
                   Estate assets categorized by level of rarity and ready to
                   control the Realestate on the MetaVerse.
                 </strong>

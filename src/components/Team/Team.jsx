@@ -38,7 +38,7 @@ const About = () => {
           <div className="row">
             <div className="col-8 d-flex">
               <h1 className="homeHeading2">
-                <span className="span-color"> NFTREALESTATE </span>TEAM
+                <span className="span-color"> METAHOUSE </span><br/>TEAM
               </h1>
             </div>
           </div>
@@ -82,7 +82,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col-7 mx-auto">
-              <p className="TeamPara">Copyright © 2021 nftsrealestate</p>
+              <p className="TeamPara">Copyright © 2021 METAHOUSE</p>
             </div>
             <div className="col-5 mx-auto">
               <a href="https://discord.gg/P4N5DVuQaK">

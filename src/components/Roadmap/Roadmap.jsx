@@ -11,7 +11,7 @@ const Roadmap = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-8 ">
-              <h1 className="homeHeading2">NFT'S REALESTATE ROADMAP</h1>
+              <h1 className="homeHeading2">NFT'S META HOUSE ROADMAP</h1>
             </div>
           </div>
           <div className="row">

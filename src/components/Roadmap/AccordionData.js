@@ -15,11 +15,11 @@ export const accordionData = [
   },
   {
     title: "Goal#4",
-    content: `We want to be able to take this project as far as possible. We are planning to build our own Token and our own RealEstate NFT game.`,
+    content: `We want to be able to take this project as far as possible. We are planning to build our own Token and our own MetaHouse NFT game.`,
   },
   {
     title: "Goal#5",
-    content: `We will give you access to a community of RealEstate entrepreneurs.
+    content: `We will give you access to a community of MetaHouse entrepreneurs.
     They come from all over the world.
     You will be introduced to exclusive opportunities.
     Join us for a better future!`,

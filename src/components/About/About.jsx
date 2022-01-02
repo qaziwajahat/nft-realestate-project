@@ -19,7 +19,7 @@ const About = () => {
           <div className="row">
             <div className="col-md-8 d-flex">
               <h1 className="homeHeading2">
-                <span className="span-color"> MEET </span>THE NFT'S REAL ESTATE
+                <span className="span-color"> MEET </span>THE NFT'S META HOUSE
                 ART
               </h1>
             </div>
@@ -44,7 +44,7 @@ const About = () => {
           <div className="row">
             <div className="col-md-6 d-flex">
               <h1 className="homeHeading2">
-                <span className="span-color"> TOP </span>REAL ESTATE NFTs
+                <span className="span-color"> TOP </span>META HOUSE NFTs
               </h1>
             </div>
           </div>
